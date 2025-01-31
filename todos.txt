@@ -1,5 +1,4 @@
-execute file in web
-watch anime 
-helloooooooooo
-try out programming in python
-watch apple tv
+sign up for heroku account
+create app on heroku
+link heroku app to github repo
+deploy on heroku

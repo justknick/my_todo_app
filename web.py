@@ -1,6 +1,10 @@
 import streamlit as st
 import functions
 
+st.set_page_config(page_title="To-Do Web by justknick", page_icon="random")
+
+my_todos = functions.get_todos()
+
 def add_todo():
     # get value the user inputs and adds it to the current list
     todo = st.session_state["new_todo"] + "\n"
@@ -10,8 +14,6 @@ def add_todo():
     # update the todo.txt file by calling the write function
     functions.write_todos(my_todos)
     # st.text_input(value='')
-
-my_todos = functions.get_todos()
 
 string_title = "My ToDo App"
 string_subheader = "This is my web app. Thank you for using it."
